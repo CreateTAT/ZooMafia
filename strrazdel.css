@@ -25,6 +25,12 @@ body {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    justify-content: flex-start;
+  }
+  .header-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
   }
 div.header-left {
 	align-items: center;
@@ -143,59 +149,6 @@ ul.top-menu a:hover {
     width: 30px;
 }
   
-/* Фильтр-панель */
-aside{
- width: 20%; 
- height: auto;
-  background-color: #f2f2f2;
-  padding: 20px;
-  border-radius: 8px;
-}
-
-.filter-panel h2 {
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-.filter-panel ul {
-  list-style: none;
-  padding: 0;
-}
-
-.filter-panel li {
-  margin-bottom: 10px;
-}
-
-.filter-panel li a {
-  display: block;
-  padding: 10px;
-  background-color: #fff;
-  border-radius: 4px;
-  text-decoration: none;
-  color: #333;
-  transition: background-color 0.3s ease;
-}
-
-.filter-panel li a:hover {
-  background-color: #ddd;
-}
-
-.subcategories {
-  display: none;
-  list-style: none;
-  padding: 0;
-  margin-left: 20px;
-}
-
-.filter-panel li:hover .subcategories {
-  display: block;
-}
-
-.subcategories li a {
-  padding: 5px 10px;
-  font-size: 14px;
-}
-
 /* Категории */
 main{
   background-color: aliceblue;
@@ -233,13 +186,11 @@ main{
   flex-direction: column;
   align-items: center;
 }
-.category-items a:hover {
-  background: #00d9ff;
-}
+
 .category-items img {
-  width: 95%;
-  margin-top: 5px;
+  width: 100%;
   height: auto;
+  border-radius: 8px;
 }
 
 .category-items p {
@@ -275,7 +226,167 @@ margin-bottom: 20px;
 .section-header-caption a:hover{
   color: #00d9ff;
 }
+/*Фильтрация*/
+aside{
+    width: 20%; 
+    height: auto;
+     background-color: #f2f2f2;
+     padding: 20px;
+     border-radius: 8px;
+   }
+   
+   .filter-panel h2 {
+     margin-bottom: 20px;
+     text-align: center;
+   }
+   
+   .filter-panel ul {
+     list-style: none;
+     padding: 0;
+   }
+   
+   .filter-panel li {
+     margin-bottom: 10px;
+   }
+   
+   .filter-panel li a {
+     display: block;
+     padding: 10px;
+     background-color: #fff;
+     border-radius: 4px;
+     text-decoration: none;
+     color: #333;
+     transition: background-color 0.3s ease;
+   }
+   
+   .filter-panel li a:hover {
+     background-color: #ddd;
+   }
+   
+   .subcategories {
+     display: none;
+     list-style: none;
+     padding: 0;
+     margin-left: 20px;
+   }
+   
+   .filter-panel li:hover .subcategories {
+     display: block;
+   }
+   
+   .subcategories li a {
+     padding: 5px 10px;
+     font-size: 14px;
+   }
+
+/* Товары */
+.products {
+    background-color: aliceblue;
+    padding: 20px 0;
+    display: flex;
+  }
   
+  .filters-panel {
+    width: 250px;
+    margin-right: 20px;
+  }
+  p{
+    color: grey;
+  }
+  .filters-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .products-content {
+    flex: 1;
+  }
+  
+  .products-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    width: 100%;
+  }
+  
+
+  .product-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .product-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    position: relative; 
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .product-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .discount-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #ff0000; 
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  .price {
+    margin-bottom: 10px;
+  }
+  
+  .sale-price {
+    font-weight: bold;
+    font-size: 18px; 
+    margin-right: 10px;
+  }
+  
+  .old-price {
+    text-decoration: line-through;
+    font-size: 14px; 
+  }
+  
+  .product-btn {
+    background-color: #05101c;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px; 
+    margin-top: auto;
+    
+   }
+   .product-btn:hover {
+    background: #00d9ff;
+  }
+  .chtivo {
+    display: flex;
+    justify-content: space-around; 
+    margin-top: 20px;
+  }
+  
+  .chtivoo {
+    width: 30%;
+    text-align: center;
+  }
+  
+  .chtivoo img {
+    width: 100%;;
+    height: auto; 
+  }
   
   /* Подвал */
   footer {
@@ -337,13 +448,31 @@ margin-bottom: 20px;
     text-align: center;
     margin-top: 20px;
   }
+  .flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .flex-item {
+    flex: 1; 
+  }
   @font-face {
     font-family: "HattoriHanzo"; 
     src: url("css/Hattori_Hanzo.otf") format("truetype"); 
     font-style: normal; 
     font-weight: normal; 
   } 
+  h1{
+    margin-left: 10px;
+    font-size: 25pt;
+  }
   h2{
     font-family: "HattoriHanzo";
     font-size: 18pt;
   }
+  p{
+    margin: 0;
+    padding: 5px;
+  }
+ 

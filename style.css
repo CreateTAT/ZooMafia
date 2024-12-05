@@ -280,6 +280,9 @@ ul.top-menu a:hover {
     margin-top: auto;
     
    }
+   .product-btn:hover {
+    background: #00d9ff;
+  }
   .chtivo {
     display: flex;
     justify-content: space-around; 

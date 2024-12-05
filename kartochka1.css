@@ -1,0 +1,253 @@
+body {
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  *{
+    box-sizing: border-box;
+  }
+  .container {
+    margin: 0 auto; 
+	max-width: 100%;
+
+  }
+  header + footer {
+	width: 100%;
+}
+
+  /* Шапка */
+  header {
+    background-color: #e0dfdf;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .header-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+div.header-left {
+	align-items: center;
+	display: flex;
+}
+.logo {
+    float: left;
+    margin: 10;
+  }
+  img[alt="Logo"] {
+    height: 100px;
+    width: 120px;
+   }
+  .korzina{
+    margin: 5;
+  }
+.korzina img{
+    height: 50px;
+    width: 70px;
+ } 
+ .header-left > .logo {
+  float: left;
+  margin: 10px;
+ }
+  .header-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header-right > .form-group {
+    margin-right: 20px;
+   }
+  
+  .select-group {
+    display: flex;
+    align-items: center;
+  }
+  
+  .select-label {
+    margin-right: 10px;
+  }
+  
+  .select {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .korzina {
+    display: inline-block;
+  }
+/* Поле с кнопкой возврата в каталог */
+
+.search-bar {
+    background-color: #fff;
+    padding: 0px 0;
+    display: flex;
+    align-items: center;
+  }
+  .menu-icon img{
+    height: 68px;
+    width: 350px;
+  }
+  .menu-icon {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  /*Основная часть*/
+main{
+    width: 100%;
+	height: auto;
+	background: #ffffff;
+}
+
+  .product-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .product-info {
+    display: flex; /* Размещение изображения и деталей в строку */
+    gap: 20px; /* Промежуток между элементами */
+  }
+  
+  .product-image img {
+    width: 500px; 
+    height: auto;
+    margin-left: 40px;
+  }
+  
+  .product-details ul {
+    list-style: none;
+    padding-top: 50px;
+    padding-left: 0;
+    font-size: 18px;
+  }
+  
+  .product-details li {
+    margin-bottom: 10px;
+  }
+  
+  .product-details strong {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .add-to-cart {
+    padding: 20px 40px;
+    background-color: black; 
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  .product-description {
+    margin-top: 20px;
+  }
+  .sale-tag {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #ff0000; 
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-left: 10px; 
+  }
+  
+  .old-price {
+    text-decoration: line-through; 
+    margin-right: 10px; 
+    font-size: 24px; 
+  }
+  
+  .new-price {
+    font-weight: bold; 
+    font-size: 28px; 
+  }
+  p{
+    font-size: 18px;
+  }
+  ul{
+    font-size: 18px;
+  }
+
+ /* Подвал */
+ footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+  }
+  
+  .footer-row {
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+  }
+  
+  .footer-col {
+    flex: 1;
+    margin: 0 100px;
+    max-width: 400px;
+  }
+  
+  .footer-col h3 {
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  
+  .footer-col ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-col li {
+    margin-bottom: 5px;
+  }
+  
+  .footer-col li a {
+    text-decoration: none;
+    color: #fff;
+  }
+  .footer-col li a:hover{
+    color: #00d9ff;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .social-icons a {
+    margin: 0 5px;
+  }
+  
+  .social-icons img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .copyright {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .flex-item {
+    flex: 1; 
+  }
+  h1{
+    margin-left: 10px;
+    font-size: 25pt;
+  }
